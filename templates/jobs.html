@@ -4,12 +4,12 @@
     
        <div class="col-md-9">
           <h4>{{job['title']}}</h4>
-          <p><b>Location: </b>{{job["Location"]}}</p>
-          <p><b>Salary: </b>{{job["Salary"]}}</p>
+          <p><b>Location: </b>{{job["location"]}}</p>
+          <p><b>Salary: </b>{{job["salary"]}}</p>
         
        </div>
       <div class="col-md-3 align-self-center" style="display:flex; justify-content:center">
-          <a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Enter your mail" class="btn btn-outline-primary">Apply</a>
+          <a href="/job/{{job['id']}}" class="btn btn-outline-primary">Click Here</a>
       </div>
      <span class="mt-3 mb-3 border-bottom"></span>
       {% endfor %}
