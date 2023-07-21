@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_jovian():
   jobs = load_jobs_from_db()
-  return render_template('home.html', 
+  return render_template('index.html', 
                          jobs=jobs)
 @app.route("/job/<id>")
 def show_jobs(id):
