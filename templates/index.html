@@ -1,6 +1,7 @@
 <DOCTYPE html>
 <html>
   <head>
+      <title>ABC Career Wedsite</title>
    {% include "style.html" %}
   </head>
   <body>
@@ -8,8 +9,7 @@
      {% include 'navbar.html'%}
       <h1 class="mt-2 mb-2">Career Website</h1>
   {% include "banner.html" %}
-    <h2 class="text-center mt-4 mb-4">About Us</h2>
-   {% include "about.html" %}
+    <h2 onclick="goToAboutPage()" class="text-center mt-4 mb-4">About Us</h2>
     <h2  class="text-center mb-4 mt-4">Open Positions</h2>
      {% include 'jobs.html' %}
     <div class="text-center mt-4 mb-2">
@@ -17,5 +17,10 @@
     </div>
    {% include "footer.html" %}
    </div>
+      <script>
+    function goToAboutPage() {
+      window.location.href = '/about';
+    }
+  </script>
   </body>
 </html>

@@ -25,6 +25,9 @@ def apply_jobs(id):
   return render_template('application_submitted.html', 
                          application=data,
                          jobs=job)
+@app.route("/about")
+def about():
+  return render_template("about.html")
   
 
 if __name__ == '__main__':
