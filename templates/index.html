@@ -1,26 +1,25 @@
-<DOCTYPE html>
-<html>
-  <head>
-      <title>ABC Career Wedsite</title>
-   {% include "style.html" %}
-  </head>
-  <body>
-   <div class="container">
-     {% include 'navbar.html'%}
-      <h1 class="mt-2 mb-2">Career Website</h1>
-  {% include "banner.html" %}
-    <h2 onclick="goToAboutPage()" class="text-center mt-4 mb-4">About Us</h2>
-    <h2  class="text-center mb-4 mt-4">Open Positions</h2>
-     {% include 'jobs.html' %}
-    <div class="text-center mt-4 mb-2">
-       <a href="mailto:email@example.com?cc=secondemail@example.com, anotheremail@example.com, &bcc=lastemail@example.com&subject=Mail from our Website&body=Sent in your Query" class="btn btn-primary">Contact Us</a>
+{% include 'header.html'%}
+
+<body class="bg-light">
+  {% include 'navbar.html'%}
+  <div class="container mt-4 mb-4">
+    <h2 class='text-center'>Welcome to the World of Mahabali: The Benevolent Asura King</h2>
+    <div class='row'>
+      <div class='col-md-5'>
+        {% include 'banner.html'%}
+      </div>
+      <div class='col-md-7' style='display: grid;align-content: space-evenly;'>
+        <p class="text-center fs-5">
+         Namaste! Welcome to this digital home dedicated to the legendary Mahabali, the benevolent Asura king of ancient Indian mythology. Here, we delve into the rich tales and timeless wisdom surrounding the great ruler, whose story continues to inspire and captivate generations.
+        </p>
+        
+      </div>
     </div>
-   {% include "footer.html" %}
-   </div>
-      <script>
-    function goToAboutPage() {
-      window.location.href = '/about';
-    }
-  </script>
-  </body>
+  </div>
+  <div class='container col-md-4 col-sm-8 text-center'>
+    {% include 'contact.html'%}
+  </div>
+  
+  {% include "footer.html" %}
+</body>
 </html>
