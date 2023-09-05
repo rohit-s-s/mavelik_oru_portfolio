@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_jovian():
+def home():
   # jobs = load_jobs_from_db()
   return render_template('index.html') 
                          # jobs=jobs)
@@ -29,6 +29,10 @@ def hello_jovian():
 @app.route("/about")
 def about():
   return render_template("about.html")
+
+@app.route("/gallery")
+def gallery():
+  return render_template("gallery.html")
   
 
 if __name__ == '__main__':
