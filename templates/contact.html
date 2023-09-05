@@ -1,5 +1,10 @@
-<h2 class='p-3'>Contact Me</h2>
-<form>
+{% include "header.html"%}
+<body class='bg-light'>
+  {% include "navbar.html"%}
+  <h2 class='p-3 text-center'>Contact Me</h2>
+  <img src="https://porfolioformaveli--rohiths19.repl.co/static/images/3.png" class='col-md-2 mx-auto d-block img-fluid'>
+  <div class="container text-center col-md-4">
+    <form>
   <!-- Name input -->
   <div class="form-outline mb-4">
     <input type="text" id="form4Example1" class="form-control" placeholder='Name' />
@@ -27,3 +32,8 @@
   <!-- Submit button -->
   <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
 </form>
+  </div>
+
+</body>
+{% include "social.html"%}
+{% include "footer.html"%}
