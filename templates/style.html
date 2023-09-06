@@ -54,7 +54,7 @@
       /* Media query for small screens */
       @media screen and (max-width: 768px) {
         .animate {
-          font-size: 31px; /* Adjust font size for smaller screens */
+          font-size: 25px; /* Adjust font size for smaller screens */
         }
       }
       
@@ -83,4 +83,39 @@
     .bg-image:hover img {
       transform: scale(1.1);
     }
+      .float-area{
+      height:50vh;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .floating-img{
+      transform: translateY(-10%);
+      animation: floater 1.5s infinite;
+      transition: ease 0.5s;
+      width: 80px;
+    }
+    
+    
+    
+    @keyframes floater {
+      0%{transform: translateY(-10%);transition: ease 0.5s;}
+      50%{transform: translateY(10%);transition: ease 0.5s;}
+    }
+    /* p {
+      text-align:center;
+      animation-duration: 5s;
+      animation-name: slidein;
+      animation-iteration-count: 1;
+      animation-direction: alternate;
+    }
+    @keyframes slidein {
+      from {
+        margin-right: 100%;
+        width: 300%;
+      } */
+    }
+
     </style>
